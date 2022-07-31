@@ -1,0 +1,8 @@
+button { padding : 20px; margin: 5px; border-radius: 10px; }
+
+button[data-id="number"] { background-color: #d8eaed;}
+button[data-id="operator"] { background-color: #fbef84;}
+button[data-id="calculate"] { background-color: #df84fb;}
+button[data-id="clear"] { background-color: #52ef84;}
+
+.display { font-size: 10rem;}

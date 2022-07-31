@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/dom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+
+<body>    
+    <div class="btn-number"></div>
+    <div class="btn-operator"></div>
+
+    <button data-id="calculate" value="=">=</button>
+    <button data-id="clear" value="c">Clear</button>
+
+    <h1 class="display"></h1>
+
+    <script src="./scripts/event-listener.js"></script>
+    <script src="./scripts/string-math.js"></script>
+    <script src="./scripts/render-button.js"></script>
+
+    <script>
+    renderBtn('.btn-number', btnNumberArray, "number")
+    renderBtn('.btn-operator', btnOperatorArray, "operator")
+    globalEventListener('click','button')
+    </script>
+</body>
+</html>
